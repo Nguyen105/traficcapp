@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
@@ -15,14 +14,14 @@ const App: React.FC = () => {
         if (direction === 'down') {
           timer = setTimeout(() => setActiveCircle(2), 3500);
         } else {
-		  setDirection('down');
+	  setDirection('down');
         }
         break;
       case 2:
         if (direction === 'down') {
           timer = setTimeout(() => setActiveCircle(3), 1000);
         } 
-		else {
+	else {
           timer = setTimeout(() => setActiveCircle(1), 1000);
         }
         break;
@@ -32,7 +31,7 @@ const App: React.FC = () => {
             setActiveCircle(2);
             setDirection('up');
           }, 3500);
-		}
+	}
         break;
       default:
         break;
